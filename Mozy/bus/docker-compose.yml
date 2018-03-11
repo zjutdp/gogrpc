@@ -1,0 +1,21 @@
+version: '3'
+services:
+  restore-db:
+    build:
+      context: restore-db
+    environment:
+      POSTGRES_DB: mozy 
+    ports:
+      - "5432:5432"
+    command: "postgres -c bytea_output='escape' -c synchronous_commit='off' -c autovacuum='off' -c listen_addresses='*'"
+    volumes:
+      - ./restore-db/schema:/docker-entrypoint-initdb.d:ro
+  bus:
+    image: bus:0.1
+    command: script/server -p 3000 -b '0.0.0.0'
+    ports:
+      - "3000:3000"
+    links:
+      - restore-db 
+    depends_on:
+      - restore-db
