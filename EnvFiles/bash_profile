@@ -1,14 +1,8 @@
-[alias]
-       b = branch
-       ba = branch -a
-       bd = branch -d
-       br = branch -r
-
-       c = commit
-       ca = commit -a
-       co = checkout
-
-       st = status
-[user]
-        name = tiand2
-        email = david.tian@emc.com
+alias bus06qa6='ssh root@busclient06.qa6.mozyops.com'
+alias cdg='cd ~/Github'
+alias davidtvm='ssh davidt@10.29.99.33'
+alias l='ls -al'
+alias lh='ls -alh'
+alias std1='ssh -A davidt@shiv.std1.mozyops.com'
+alias std2='ssh -A davidt@shiv.st2.mozyops.com'
+alias us1b='ssh -A davidt@shiv.us1b.mozyops.com'
