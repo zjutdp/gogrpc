@@ -1,0 +1,26 @@
+goals in maven: https://stackoverflow.com/questions/3996802/list-all-of-the-possible-goals-in-maven-2
+  612  cd SpringBoot/
+  613  l
+  614  gradle -v
+  615  mkdir -p src/main/java/hello
+  616  subl build.gradle
+  617  subl pom.xml
+  618  subl src/main/java/hello/Greeting.java
+  619  subl src/main/java/hello/GreetingController.java
+  620  subl src/main/java/hello/Application.java
+  621  mvn build
+  622  mvn help
+  623  mvn
+  624  mvn install
+  625  l
+  626  l target/
+  627  java -jar target/gs-rest-service-0.1.0.jar
+  628  history|less
+
+https://guides.gradle.org/building-java-applications/?_ga=2.11287732.1835308510.1523699193-1687976061.1523427940
+  632  gradle build
+  633* 
+  634  l build
+  635  l build/libs/
+  636  java -jar build/libs/gs-rest-service-0.1.0.jar
+
