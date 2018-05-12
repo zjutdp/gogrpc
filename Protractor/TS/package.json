@@ -1,0 +1,10 @@
+{
+    "name": "e2e-ts",
+    "version": "1.0.0",
+    "devDependencies": {
+        "@types/jasmine": "^2.5.51",
+        "protractor": "^5.1.2",
+        "ts-node": "^3.0.6",
+        "typescript": "^2.3.4"
+    }
+}
