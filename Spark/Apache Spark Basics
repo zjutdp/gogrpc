@@ -1,0 +1,53 @@
+Very good Video: https://www.youtube.com/watch?v=Pu9qgnebCjs for explaining the relationship between RM/NM/AM/Executor/Task/Spark Client & Driver, 类比: Yarn模式下，RM像People Manager， NM像IC（不同项目不同的时间分配），AM像是Project Manager（Rotating Mode），Container/Executor/Task/Job
+
+Very good Video: https://www.youtube.com/watch?v=HQTB3hlLD6E Mac OS X单机上Spark helloworld
+
+# brew install apache-spark
+# spark-shell
+
+sc, org.apache.spark.SparkContext
+spark, org.apache.spark.sql.SparkSession
+
+sc.setLogLevel("INFO")
+
+val inputFile = sc.textFile("/Users/tiand2/src/cc-lasp/ansible/input.txt") # load text file as RDD
+var counts = inputFile.flatMap(line => line.split(" ")).map(word => (word, 1)).reduceByKey(_ + _) # created RDD (Resilent Distributed Dataset)
+
+counts.saveAsTextFile("/Users/tiand2/src/cc-lasp/ansible/output2") # action, which really triggers the map/reduce etc
+
+
+counts.repartition(5) # Default partition is 2
+counts.toDebugString # check
+
+
+What happens after running: spark-shell? 2 processes are started:
+tiand2            8836   0.0  4.1  5182600 681192 s002  S+    7:46AM   0:33.42 /Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin/java -cp /usr/local/Cellar/apache-spark/2.3.0/libexec/conf/:/usr/local/Cellar/apache-spark/2.3.0/libexec/jars/* -Dscala.usejavacp=true -Xmx1g org.apache.spark.deploy.SparkSubmit --class org.apache.spark.repl.Main --name Spark shell spark-shell
+tiand2            8825   0.0  0.0  2436456   1212 s002  S+    7:46AM   0:00.01 bash ./spark-shell
+
+
+What happens after running start-master.sh?
+
+
+
+spark-submit \
+--class org.apache.spark.examples.SparkPi \
+  --master spark://192.168.1.3:7077 \
+  --executor-memory 1G \
+  --total-executor-cores 100 \
+  /usr/local/Cellar/apache-spark/2.3.0/libexec/examples/jars/spark-examples_2.11-2.3.0.jar \
+  1000
+
+
+ app = spark.builder.appName("PythonPi").getOrCreate()
+
+partitions = int(sys.argv[1]) if len(sys.argv) > 1 else 2
+n = 100000 * partitions
+def f(_):
+    x = random() * 2 - 1
+    y = random() * 2 - 1
+    return 1 if x ** 2 + y ** 2 <= 1 else 0
+
+count = spark.sparkContext.parallelize(range(1, n + 1), partitions).map(f).reduce(add)
+print("Pi is roughly %f" % (4.0 * count / n))
+
+app.stop()

@@ -1,0 +1,28 @@
+Job description
+Fueled by a fundamental belief that having access to financial services creates opportunity, PayPal (NASDAQ: PYPL) is committed to democratizing financial services and empowering people and businesses to join and thrive in the global economy. Our open digital payments platform gives PayPal’s 237 million active account holders the confidence to connect and transact in new and powerful ways, whether they are online, on a mobile device, in an app, or in person. Through a combination of technological innovation and strategic partnerships, PayPal creates better ways to manage and move money, and offers choice and flexibility when sending payments, paying or getting paid. Available in more than 200 markets around the world, the PayPal platform, including Braintree, Venmo and Xoom enables consumers and merchants to receive money in more than 100 currencies, withdraw funds in 56 currencies and hold balances in their PayPal accounts in 25 currencies.
+You will closely work with the various world-class data driven e-payment related businesses by using the cutting-edge technologies and advanced data solution. E.g., Risk control, customer services, privacies and etc. You will face the complex big data challenges or problems for fin-tech industry domain, which turns the big data to more valuable business insights, like customer profiling, risk assessment/vetting and so on. You do not only understand the data deeply but also design&develop the enterprise-level data algorithm and solutions for huge amount of data, various types of data for more business insights.
+Be a leader and advocate for your team, your organization
+Manage and grow an effective and efficient engineering organization
+Works with PayPal business units and Product Dev teams to design, develop and deliver data solutions on one of the largest data platforms in the world.
+Supports PayPal business units by providing data in a ready-to-use form to data analysts and data scientists for Business insights, predictive analytics, machine learning, etc.
+Owns and is accountable for the design and development of a Data solution feature or a Data Pipeline with high reliability, stability, scalability and performance.
+Design or develop data model and enrich the analytical data sources for further usability and availability by advanced & cutting-edge technology.
+Collaborate with other teams or groups to identify challenges and design solutions
+BS degree in Computer Science or Engineering
+8+ years of experience in software engineering.
+2+ years people manager for software development team
+5+ years working in data engineer or a similar role in large enterprise data warehouse teams preferred.
+Masters or PhD Preferred   
+Expert in multiple Programming/scripting languages, i.e. Unix/Linux Shell Scripting, Perl, Python, C++, Java, Python, Ruby, Scala and etc.
+Good understanding of database principles and SQL beyond just data access
+Good understanding of Data Modelling Concepts, experience with modelling data and metadata to support relational & non-relational database implementations; experience with building Logical and Physical data models.
+Familiar with various big data technologies, open source data processing frameworks. E.g., Spark, Hadoop, HBase, ElasticSearch, Pig, Hive, and so on.
+Good understanding of data processing, data structure optimization and design for high scalability, availability, reliability and performance.
+Good understanding of REST-oriented APIs, understanding of distributed systems, data streaming, Complex Event Processing, NoSQL solutions for creating and managing data integration pipelines for Batch and Real Time Data needs.
+Strong analytical and problem solving skills.
+Have a strong background in leading teams and making others great
+Work and collaborate well with executives and customers
+Intermediate level knowledge on following business domains is a plus, E.g., Marketing, Risk, Customer Service, Payments, e-commerce
+Excellent oral and written communication skills in English.
+We're a purpose-driven company whose beliefs are the foundation for how we conduct business every day. We hold ourselves to our One Team Behaviors which demand that we hold the highest ethical standards, to empower an open and diverse workplace, and strive to treat everyone who is touched by our business with dignity and respect. Our employees challenge the status quo, ask questions, and find solutions. We want to break down barriers to financial empowerment. Join us as we change the way the world defines financial freedom.
+PayPal provides equal employment opportunity (EEO) to all persons regardless of age, color, national origin, citizenship status, physical or mental disability, race, religion, creed, gender, sex, pregnancy, sexual orientation, gender identity and/or expression, genetic information, marital status, status with regard to public assistance, veteran status, or any other characteristic protected by federal, state or local law. In addition, PayPal will provide reasonable accommodations for qualified individuals with disabilities.

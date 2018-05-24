@@ -1,0 +1,14 @@
+---
+[lasps]
+lasp1
+lasp2
+lasp3
+lasp4
+
+[namenodes]
+lasp1
+lasp2
+
+[datanodes]
+lasp3
+lasp4
