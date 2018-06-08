@@ -13,8 +13,11 @@ export class PostsComponent implements OnInit {
   constructor(private data: DataService) { }
 
   ngOnInit() {
+    // Full version of subscription
     this.data.getPosts().subscribe(
-      data => this.posts$ = data
+      data => this.posts$ = data,
+      err => console.log(err), 
+      () => console.log('completed')
     )
   }
 
