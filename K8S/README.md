@@ -1,4 +1,4 @@
-Followed https://1byte.io/developer-guide-to-docker-and-kubernetes for quickly going over Docker and Kubernetes basics.
+Followed https://1byte.io/developer-guide-to-docker-and-kubernetes for quickly going over Docker and Kubernetes basics. See original.md if the link is gone.
 
 ## Notes
 * To enable minikube working, you need use version: 0.25.2, otherwise it will hang at "start cluster components" in Dell office network with Dell Mac OS image versino 10.11
