@@ -1,3 +1,3 @@
 # Tips
-* brew upgrade nodejs
+*  brew update && brew upgrade node
 * use "npm install -g npm" to update npm to latest
