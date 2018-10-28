@@ -6,3 +6,4 @@
 * Run "rails console > ENV" to print out current ENVs
 * Run "rails db:migrate -e production" to init production DB
 * Run "bin/rails r 'puts ActiveSupport::Dependencies.autoload_paths'" to print auto loading paths
+* Use "ab" cmd http://httpd.apache.org/docs/2.4/programs/ab.html for perf testing
