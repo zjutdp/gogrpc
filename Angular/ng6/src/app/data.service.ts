@@ -16,6 +16,8 @@ export class DataService {
   }
 
   getUser(userId){
+    this.user$ = JSON.parse(sessionStorage.getItem(this.userId))
+
     return this.http.get<User>('https://jsonplaceholder.typicode.com/users/' + userId)
   }
 

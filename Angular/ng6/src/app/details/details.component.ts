@@ -19,14 +19,11 @@ export class DetailsComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.userId)
-
     this.user$ = JSON.parse(sessionStorage.getItem(this.userId))
 
     if (this.user$ == null) {
       this.data.getUser(this.userId).subscribe(
           data => {
-            console.log(typeof data)
             this.user$ = new User(data.id, data.name, data.email, data.phone)
             sessionStorage.setItem(this.userId, JSON.stringify(this.user$))
           })
