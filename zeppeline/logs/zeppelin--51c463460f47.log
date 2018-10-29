@@ -1,0 +1,151 @@
+ WARN [2018-05-26 15:01:43,907] ({main} ZeppelinConfiguration.java[create]:97) - Failed to load configuration, proceeding with a default
+ INFO [2018-05-26 15:01:43,954] ({main} ZeppelinConfiguration.java[create]:109) - Server Host: 0.0.0.0
+ INFO [2018-05-26 15:01:43,955] ({main} ZeppelinConfiguration.java[create]:111) - Server Port: 8080
+ INFO [2018-05-26 15:01:43,955] ({main} ZeppelinConfiguration.java[create]:115) - Context Path: /
+ INFO [2018-05-26 15:01:43,963] ({main} ZeppelinConfiguration.java[create]:116) - Zeppelin Version: 0.7.3
+ INFO [2018-05-26 15:01:43,989] ({main} Log.java[initialized]:186) - Logging initialized @558ms
+ INFO [2018-05-26 15:01:44,072] ({main} ZeppelinServer.java[setupWebAppContext]:346) - ZeppelinServer Webapp path: /zeppelin/webapps
+ INFO [2018-05-26 15:01:44,242] ({main} ZeppelinServer.java[main]:187) - Starting zeppelin server
+ INFO [2018-05-26 15:01:44,245] ({main} Server.java[doStart]:327) - jetty-9.2.15.v20160210
+ INFO [2018-05-26 15:01:46,306] ({main} StandardDescriptorProcessor.java[visitServlet]:297) - NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+ WARN [2018-05-26 15:01:46,544] ({main} Helium.java[loadConf]:101) - /zeppelin/conf/helium.json does not exists
+ WARN [2018-05-26 15:01:46,709] ({main} Interpreter.java[register]:406) - Static initialization is deprecated for interpreter sql, You should change it to use interpreter-setting.json in your jar or interpreter/{interpreter}/interpreter-setting.json
+ INFO [2018-05-26 15:01:46,710] ({main} InterpreterSettingManager.java[init]:305) - Interpreter psql.sql found. class=org.apache.zeppelin.postgresql.PostgreSqlInterpreter
+ INFO [2018-05-26 15:01:47,147] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name ignite
+ INFO [2018-05-26 15:01:47,148] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name python
+ INFO [2018-05-26 15:01:47,149] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name jdbc
+ INFO [2018-05-26 15:01:47,152] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name psql
+ INFO [2018-05-26 15:01:47,153] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name lens
+ INFO [2018-05-26 15:01:47,154] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name pig
+ INFO [2018-05-26 15:01:47,154] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name flink
+ INFO [2018-05-26 15:01:47,155] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name angular
+ INFO [2018-05-26 15:01:47,155] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name livy
+ INFO [2018-05-26 15:01:47,156] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name file
+ INFO [2018-05-26 15:01:47,156] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name elasticsearch
+ INFO [2018-05-26 15:01:47,157] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name cassandra
+ INFO [2018-05-26 15:01:47,157] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name spark
+ INFO [2018-05-26 15:01:47,157] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name sh
+ INFO [2018-05-26 15:01:47,158] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name md
+ INFO [2018-05-26 15:01:47,158] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name alluxio
+ INFO [2018-05-26 15:01:47,158] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name bigquery
+ INFO [2018-05-26 15:01:47,158] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name hbase
+ INFO [2018-05-26 15:01:47,159] ({main} InterpreterSettingManager.java[init]:337) - InterpreterSettingRef name kylin
+ INFO [2018-05-26 15:01:47,203] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group python : id=2DE4UDN1W, name=python
+ INFO [2018-05-26 15:01:47,204] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group spark : id=2DFUF3CH8, name=spark
+ INFO [2018-05-26 15:01:47,205] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group sh : id=2DDUMZJAU, name=sh
+ INFO [2018-05-26 15:01:47,205] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group ignite : id=2DFWKV3TV, name=ignite
+ INFO [2018-05-26 15:01:47,206] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group cassandra : id=2DG8TXY1F, name=cassandra
+ INFO [2018-05-26 15:01:47,208] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group hbase : id=2DE7M3TJC, name=hbase
+ INFO [2018-05-26 15:01:47,208] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group flink : id=2DH62SU2P, name=flink
+ INFO [2018-05-26 15:01:47,208] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group lens : id=2DDWK9W2Y, name=lens
+ INFO [2018-05-26 15:01:47,209] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group psql : id=2DF818AY6, name=psql
+ INFO [2018-05-26 15:01:47,209] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group alluxio : id=2DGSR24VK, name=alluxio
+ INFO [2018-05-26 15:01:47,210] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group elasticsearch : id=2DH3W85V6, name=elasticsearch
+ INFO [2018-05-26 15:01:47,210] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group file : id=2DFP4PGCK, name=file
+ INFO [2018-05-26 15:01:47,210] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group bigquery : id=2DFC39BNQ, name=bigquery
+ INFO [2018-05-26 15:01:47,211] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group md : id=2DGVVEA3S, name=md
+ INFO [2018-05-26 15:01:47,211] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group angular : id=2DEQB6JDG, name=angular
+ INFO [2018-05-26 15:01:47,211] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group pig : id=2DDM7HPE7, name=pig
+ INFO [2018-05-26 15:01:47,211] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group kylin : id=2DGFPE9EJ, name=kylin
+ INFO [2018-05-26 15:01:47,212] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group livy : id=2DEMCFWYN, name=livy
+ INFO [2018-05-26 15:01:47,212] ({main} InterpreterSettingManager.java[init]:366) - InterpreterSetting group jdbc : id=2DFFV9KFF, name=jdbc
+ INFO [2018-05-26 15:01:47,218] ({main} InterpreterFactory.java[<init>]:130) - shiroEnabled: false
+ INFO [2018-05-26 15:01:47,353] ({main} VfsLog.java[info]:138) - Using "/tmp/vfs_cache" as temporary files store.
+ INFO [2018-05-26 15:01:47,405] ({main} GitNotebookRepo.java[<init>]:63) - Opening a git repo at '/notebook'
+ INFO [2018-05-26 15:01:47,529] ({main} GitNotebookRepo.java[<init>]:66) - Git repo /notebook/.git does not exist, creating a new one
+ INFO [2018-05-26 15:01:47,705] ({main} NotebookAuthorization.java[loadFromFile]:96) - /zeppelin/conf/notebook-authorization.json
+ INFO [2018-05-26 15:01:47,707] ({main} Credentials.java[loadFromFile]:102) - /zeppelin/conf/credentials.json
+ INFO [2018-05-26 15:01:47,795] ({main} StdSchedulerFactory.java[instantiate]:1184) - Using default implementation for ThreadExecutor
+ INFO [2018-05-26 15:01:47,798] ({main} SimpleThreadPool.java[initialize]:268) - Job execution threads will use class loader of thread: main
+ INFO [2018-05-26 15:01:47,824] ({main} SchedulerSignalerImpl.java[<init>]:61) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ INFO [2018-05-26 15:01:47,826] ({main} QuartzScheduler.java[<init>]:240) - Quartz Scheduler v.2.2.1 created.
+ INFO [2018-05-26 15:01:47,828] ({main} RAMJobStore.java[initialize]:155) - RAMJobStore initialized.
+ INFO [2018-05-26 15:01:47,829] ({main} QuartzScheduler.java[initialize]:305) - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ INFO [2018-05-26 15:01:47,830] ({main} StdSchedulerFactory.java[instantiate]:1339) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ INFO [2018-05-26 15:01:47,830] ({main} StdSchedulerFactory.java[instantiate]:1343) - Quartz scheduler version: 2.2.1
+ INFO [2018-05-26 15:01:47,831] ({main} QuartzScheduler.java[start]:575) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ INFO [2018-05-26 15:01:47,835] ({main} Notebook.java[<init>]:127) - Notebook indexing started...
+ INFO [2018-05-26 15:01:47,846] ({main} LuceneSearch.java[addIndexDocs]:305) - Indexing 0 notebooks took 10ms
+ INFO [2018-05-26 15:01:47,847] ({main} Notebook.java[<init>]:129) - Notebook indexing finished: 0 indexed in 0s
+ INFO [2018-05-26 15:01:48,076] ({main} ServerImpl.java[initDestination]:94) - Setting the server's publish address to be /
+ INFO [2018-05-26 15:01:48,658] ({main} ContextHandler.java[doStart]:744) - Started o.e.j.w.WebAppContext@44f75083{/,file:/zeppelin/webapps/webapp/,AVAILABLE}{/zeppelin/zeppelin-web-0.7.3.war}
+ INFO [2018-05-26 15:01:48,836] ({main} AbstractConnector.java[doStart]:266) - Started ServerConnector@75308740{HTTP/1.1}{0.0.0.0:8080}
+ INFO [2018-05-26 15:01:48,837] ({main} Server.java[doStart]:379) - Started @5410ms
+ INFO [2018-05-26 15:01:48,840] ({main} ZeppelinServer.java[main]:197) - Done, zeppelin server started
+ WARN [2018-05-26 15:02:38,911] ({qtp75457651-38} SecurityRestApi.java[ticket]:87) - {"status":"OK","message":"","body":{"principal":"anonymous","ticket":"anonymous","roles":"[]"}}
+ INFO [2018-05-26 15:02:39,035] ({qtp75457651-19} NotebookServer.java[onOpen]:157) - New connection from 172.17.0.1 : 35820
+ INFO [2018-05-26 15:03:27,834] ({qtp75457651-14} InterpreterRestApi.java[updateSetting]:138) - Update interpreterSetting 2DFUF3CH8
+ INFO [2018-05-26 15:03:40,987] ({qtp75457651-15} InterpreterRestApi.java[restartSetting]:181) - Restart interpreterSetting 2DFUF3CH8, msg=
+ INFO [2018-05-26 15:03:47,549] ({qtp75457651-19} NotebookServer.java[onClose]:364) - Closed connection to 172.17.0.1 : 35820. (1001) null
+ WARN [2018-05-26 15:03:47,964] ({qtp75457651-13} SecurityRestApi.java[ticket]:87) - {"status":"OK","message":"","body":{"principal":"anonymous","ticket":"anonymous","roles":"[]"}}
+ INFO [2018-05-26 15:03:48,005] ({qtp75457651-15} NotebookServer.java[onOpen]:157) - New connection from 172.17.0.1 : 35840
+ INFO [2018-05-26 15:06:22,797] ({qtp75457651-19} FolderView.java[onNoteNameChanged]:205) - Note name changed:  -> Untitled Note 1
+ INFO [2018-05-26 15:06:22,799] ({qtp75457651-19} FolderView.java[createFolder]:107) - Create folder /
+ INFO [2018-05-26 15:06:22,799] ({qtp75457651-19} Folder.java[setParent]:168) - Set parent of / to /
+ INFO [2018-05-26 15:06:22,800] ({qtp75457651-19} Folder.java[addNote]:184) - Add note 2DEWA66EX to folder /
+ INFO [2018-05-26 15:06:22,943] ({qtp75457651-14} NotebookServer.java[sendNote]:711) - New operation from 172.17.0.1 : 35840 : anonymous : GET_NOTE : 2DEWA66EX
+ WARN [2018-05-26 15:06:23,001] ({qtp75457651-14} GitNotebookRepo.java[revisionHistory]:157) - No Head found for 2DEWA66EX, No HEAD exists and no explicit starting revision was specified
+ INFO [2018-05-26 15:06:23,105] ({qtp75457651-14} InterpreterFactory.java[createInterpretersForNote]:188) - Create interpreter instance spark for note 2DEWA66EX
+ INFO [2018-05-26 15:06:23,112] ({qtp75457651-14} InterpreterFactory.java[createInterpretersForNote]:221) - Interpreter org.apache.zeppelin.spark.SparkInterpreter 1038242502 created
+ INFO [2018-05-26 15:06:23,113] ({qtp75457651-14} InterpreterFactory.java[createInterpretersForNote]:221) - Interpreter org.apache.zeppelin.spark.SparkSqlInterpreter 1268627960 created
+ INFO [2018-05-26 15:06:23,114] ({qtp75457651-14} InterpreterFactory.java[createInterpretersForNote]:221) - Interpreter org.apache.zeppelin.spark.DepInterpreter 841279923 created
+ INFO [2018-05-26 15:06:23,114] ({qtp75457651-14} InterpreterFactory.java[createInterpretersForNote]:221) - Interpreter org.apache.zeppelin.spark.PySparkInterpreter 1621170458 created
+ INFO [2018-05-26 15:06:23,117] ({qtp75457651-14} InterpreterFactory.java[createInterpretersForNote]:221) - Interpreter org.apache.zeppelin.spark.SparkRInterpreter 1333400490 created
+ INFO [2018-05-26 15:06:32,609] ({qtp75457651-19} NotebookServer.java[broadcastNewParagraph]:647) - Broadcasting paragraph on run call instead of note.
+ INFO [2018-05-26 15:06:32,650] ({pool-2-thread-2} SchedulerFactory.java[jobStarted]:131) - Job paragraph_1527347182796_-898615702 started by scheduler org.apache.zeppelin.interpreter.remote.RemoteInterpretershared_session1629669387
+ INFO [2018-05-26 15:06:32,651] ({pool-2-thread-2} Paragraph.java[jobRun]:362) - run paragraph 20180526-150622_915855799 using null org.apache.zeppelin.interpreter.LazyOpenInterpreter@3de252c6
+ INFO [2018-05-26 15:06:32,660] ({pool-2-thread-2} RemoteInterpreterManagedProcess.java[start]:126) - Run interpreter process [/zeppelin/bin/interpreter.sh, -d, /zeppelin/interpreter/spark, -p, 43131, -l, /zeppelin/local-repo/2DFUF3CH8]
+ INFO [2018-05-26 15:06:33,234] ({pool-2-thread-2} RemoteInterpreter.java[init]:221) - Create remote interpreter org.apache.zeppelin.spark.SparkInterpreter
+ INFO [2018-05-26 15:06:33,430] ({pool-2-thread-2} RemoteInterpreter.java[pushAngularObjectRegistryToRemote]:551) - Push local angular object registry from ZeppelinServer to remote interpreter group 2DFUF3CH8:shared_process
+ INFO [2018-05-26 15:06:33,445] ({pool-2-thread-2} RemoteInterpreter.java[init]:221) - Create remote interpreter org.apache.zeppelin.spark.SparkSqlInterpreter
+ INFO [2018-05-26 15:06:33,450] ({pool-2-thread-2} RemoteInterpreter.java[init]:221) - Create remote interpreter org.apache.zeppelin.spark.DepInterpreter
+ INFO [2018-05-26 15:06:33,453] ({pool-2-thread-2} RemoteInterpreter.java[init]:221) - Create remote interpreter org.apache.zeppelin.spark.PySparkInterpreter
+ INFO [2018-05-26 15:06:33,464] ({pool-2-thread-2} RemoteInterpreter.java[init]:221) - Create remote interpreter org.apache.zeppelin.spark.SparkRInterpreter
+ INFO [2018-05-26 15:06:45,420] ({pool-2-thread-2} NotebookServer.java[afterStatusChange]:2062) - Job 20180526-150622_915855799 is finished successfully, status: FINISHED
+ INFO [2018-05-26 15:06:45,505] ({pool-2-thread-2} SchedulerFactory.java[jobFinished]:137) - Job paragraph_1527347182796_-898615702 finished by scheduler org.apache.zeppelin.interpreter.remote.RemoteInterpretershared_session1629669387
+ INFO [2018-05-26 15:06:48,411] ({qtp75457651-19} NotebookServer.java[broadcastNewParagraph]:647) - Broadcasting paragraph on run call instead of note.
+ INFO [2018-05-26 15:06:48,441] ({pool-2-thread-2} SchedulerFactory.java[jobStarted]:131) - Job paragraph_1527347192609_-713520833 started by scheduler org.apache.zeppelin.interpreter.remote.RemoteInterpretershared_session1629669387
+ INFO [2018-05-26 15:06:48,442] ({pool-2-thread-2} Paragraph.java[jobRun]:362) - run paragraph 20180526-150632_150281998 using null org.apache.zeppelin.interpreter.LazyOpenInterpreter@3de252c6
+ INFO [2018-05-26 15:06:48,457] ({pool-2-thread-2} NotebookServer.java[afterStatusChange]:2062) - Job 20180526-150632_150281998 is finished successfully, status: FINISHED
+ WARN [2018-05-26 15:06:48,489] ({pool-2-thread-2} NotebookServer.java[afterStatusChange]:2064) - Job 20180526-150632_150281998 is finished, status: ERROR, exception: null, result: %text <console>:1: error: ';' expected but 'import' found.
+from pyspark import SparkContext
+             ^
+
+ INFO [2018-05-26 15:06:48,524] ({pool-2-thread-2} SchedulerFactory.java[jobFinished]:137) - Job paragraph_1527347192609_-713520833 finished by scheduler org.apache.zeppelin.interpreter.remote.RemoteInterpretershared_session1629669387
+ INFO [2018-05-26 15:10:38,993] ({qtp75457651-14} NotebookServer.java[onClose]:364) - Closed connection to 172.17.0.1 : 35840. (1001) null
+ INFO [2018-05-26 15:10:54,772] ({Thread-13} ZeppelinServer.java[run]:201) - Shutting down Zeppelin Server ... 
+ INFO [2018-05-26 15:10:54,783] ({Thread-13} AbstractConnector.java[doStop]:306) - Stopped ServerConnector@75308740{HTTP/1.1}{0.0.0.0:8080}
+ INFO [2018-05-26 15:10:54,795] ({Thread-13} ContextHandler.java[doStop]:865) - Stopped o.e.j.w.WebAppContext@44f75083{/,file:/zeppelin/webapps/webapp/,UNAVAILABLE}{/zeppelin/zeppelin-web-0.7.3.war}
+ INFO [2018-05-26 15:10:55,527] ({Thread-22} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DE4UDN1W:shared_process
+ INFO [2018-05-26 15:10:55,528] ({Thread-24} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DDUMZJAU:shared_process
+ INFO [2018-05-26 15:10:55,528] ({Thread-23} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DFUF3CH8:shared_process
+ INFO [2018-05-26 15:10:55,530] ({Thread-23} RemoteInterpreterProcess.java[dereference]:123) - shutdown interpreter process
+ INFO [2018-05-26 15:10:55,529] ({Thread-25} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DFWKV3TV:shared_process
+ INFO [2018-05-26 15:10:55,530] ({Thread-29} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DE7M3TJC:shared_process
+ INFO [2018-05-26 15:10:55,530] ({Thread-26} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DG8TXY1F:shared_process
+ INFO [2018-05-26 15:10:55,551] ({Thread-32} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DDWK9W2Y:shared_process
+ INFO [2018-05-26 15:10:55,552] ({Thread-33} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DF818AY6:shared_process
+ INFO [2018-05-26 15:10:55,553] ({Thread-30} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DH62SU2P:shared_process
+ INFO [2018-05-26 15:10:55,554] ({Thread-36} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DGSR24VK:shared_process
+ INFO [2018-05-26 15:10:55,555] ({Thread-40} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DH3W85V6:shared_process
+ INFO [2018-05-26 15:10:55,556] ({Thread-42} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DFP4PGCK:shared_process
+ INFO [2018-05-26 15:10:55,556] ({Thread-47} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DDM7HPE7:shared_process
+ INFO [2018-05-26 15:10:55,556] ({Thread-46} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DEQB6JDG:shared_process
+ INFO [2018-05-26 15:10:55,556] ({Thread-45} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DGVVEA3S:shared_process
+ INFO [2018-05-26 15:10:55,556] ({Thread-43} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DFC39BNQ:shared_process
+ INFO [2018-05-26 15:10:55,557] ({Thread-51} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DFFV9KFF:shared_process
+ INFO [2018-05-26 15:10:55,557] ({Thread-49} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DEMCFWYN:shared_process
+ INFO [2018-05-26 15:10:55,557] ({Thread-48} InterpreterGroup.java[shutdown]:245) - Close interpreter group 2DGFPE9EJ:shared_process
+ INFO [2018-05-26 15:10:55,567] ({Thread-58} InterpreterGroup.java[close]:185) - Close interpreter group 2DFUF3CH8:shared_process for session: shared_session
+ERROR [2018-05-26 15:10:55,940] ({pool-4-thread-1} AppendOutputRunner.java[run]:68) - Wait for OutputBuffer queue interrupted: null
+ INFO [2018-05-26 15:10:58,258] ({Thread-23} RemoteInterpreterProcess.java[dereference]:133) - Exception in RemoteInterpreterProcess while synchronized dereference, can safely ignore exception while client.shutdown() may terminates remote process
+ INFO [2018-05-26 15:10:58,261] ({Exec Default Executor} RemoteInterpreterManagedProcess.java[onProcessComplete]:180) - Interpreter process exited 0
+ INFO [2018-05-26 15:10:58,287] ({Thread-13} NotebookRepoSync.java[close]:430) - Closing all notebook storages
+ INFO [2018-05-26 15:11:01,289] ({Thread-13} ZeppelinServer.java[run]:210) - Bye

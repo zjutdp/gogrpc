@@ -1,0 +1,13 @@
+  PID TTY           TIME CMD
+ 1999 ttys001    0:00.19 -bash
+48868 ttys001    0:00.00 -bash
+49836 ttys002    0:00.13 -bash
+51346 ttys002    0:00.01 nc -lk 3333
+51348 ttys003    0:00.38 -bash
+52746 ttys003    0:27.06 /Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin/java -cp /usr/local/Cellar/apache-spark/2.3.0/libexec/conf/:/usr/local/Cellar/apache-spark/2.3.0/libexec/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host cnentiand2m6.corp.emc.com --port 7077 --webui-port 8080
+97941 ttys003    0:14.69 /Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin/java -cp /anaconda2/lib/python2.7/site-packages/pyspark/conf:/anaconda2/lib/python2.7/site-packages/pyspark/jars/* -Xmx1g org.apache.spark.deploy.SparkSubmit spark-streaming-demo.py localhost 3333
+97955 ttys003    0:00.68 python /Users/tiand2/Github/Spark/spark-streaming-demo.py localhost 3333
+97985 ttys003    0:00.33 python -m pyspark.daemon
+97986 ttys003    0:00.25 python -m pyspark.daemon
+97987 ttys003    0:00.23 python -m pyspark.daemon
+62185 ttys005    0:00.59 -bash

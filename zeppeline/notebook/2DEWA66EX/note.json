@@ -1,0 +1,113 @@
+{
+  "paragraphs": [
+    {
+      "text": "sc",
+      "user": "anonymous",
+      "dateUpdated": "May 26, 2018 3:06:32 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res0: org.apache.spark.SparkContext \u003d org.apache.spark.SparkContext@66a5dcb1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1527347182796_-898615702",
+      "id": "20180526-150622_915855799",
+      "dateCreated": "May 26, 2018 3:06:22 PM",
+      "dateStarted": "May 26, 2018 3:06:32 PM",
+      "dateFinished": "May 26, 2018 3:06:45 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "from pyspark import SparkContext",
+      "user": "anonymous",
+      "dateUpdated": "May 26, 2018 3:06:48 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u003cconsole\u003e:1: error: \u0027;\u0027 expected but \u0027import\u0027 found.\nfrom pyspark import SparkContext\n             ^\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1527347192609_-713520833",
+      "id": "20180526-150632_150281998",
+      "dateCreated": "May 26, 2018 3:06:32 PM",
+      "dateStarted": "May 26, 2018 3:06:48 PM",
+      "dateFinished": "May 26, 2018 3:06:48 PM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "anonymous",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1527347208409_1711197384",
+      "id": "20180526-150648_196714631",
+      "dateCreated": "May 26, 2018 3:06:48 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Untitled Note 1",
+  "id": "2DEWA66EX",
+  "angularObjects": {
+    "2DE4UDN1W:shared_process": [],
+    "2DGSR24VK:shared_process": [],
+    "2DFUF3CH8:shared_process": [],
+    "2DDUMZJAU:shared_process": [],
+    "2DGVVEA3S:shared_process": [],
+    "2DGFPE9EJ:shared_process": [],
+    "2DEQB6JDG:shared_process": [],
+    "2DDM7HPE7:shared_process": [],
+    "2DFWKV3TV:shared_process": [],
+    "2DFC39BNQ:shared_process": [],
+    "2DH62SU2P:shared_process": [],
+    "2DFP4PGCK:shared_process": [],
+    "2DH3W85V6:shared_process": [],
+    "2DDWK9W2Y:shared_process": [],
+    "2DFFV9KFF:shared_process": [],
+    "2DG8TXY1F:shared_process": [],
+    "2DF818AY6:shared_process": [],
+    "2DEMCFWYN:shared_process": [],
+    "2DE7M3TJC:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}
