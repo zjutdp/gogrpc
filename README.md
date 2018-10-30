@@ -15,3 +15,6 @@
 * https://asciinema.org/, Record and share your terminal sessions, the right way. Forget screen recording apps and blurry video. Enjoy a lightweight, purely text-based approach to terminal recording.
 * https://blog.alexellis.io/docker-mac-bash-completion/, Auto completion for docker
 * https://1byte.io/developer-guide-to-docker-and-kubernetes/
+
+## Concept, Opinion, Research
+* http://www.hadooptrainingchennai.in/vagrant-training-mumbai/, Vagrant relation with Base box, Vagrant file, VM provider/privioners
