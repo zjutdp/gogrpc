@@ -3,3 +3,11 @@
 * Rails 5 JWT enabled multiple versions REST API, https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-two
 * SQLite Full Text search support, https://crawshaw.io/blog/one-process-programming-notes?utm_source=wanqu.co&utm_campaign=Wanqu+Daily&utm_medium=website&from=singlemessage&isappinstalled=0
 * 
+
+# Tools
+* https://httpie.org, httpie, a handy and intuitive http client cmd
+* ab, Apache Bench for concurrent HTTP requesting testing
+* https://reqres.in, Reqres - A hosted REST-API ready to respond to your AJAX requests
+* https://asciinema.org/, Record and share your terminal sessions, the right way. Forget screen recording apps and blurry video. Enjoy a lightweight, purely text-based approach to terminal recording.
+* https://blog.alexellis.io/docker-mac-bash-completion/, Auto completion for docker
+* https://1byte.io/developer-guide-to-docker-and-kubernetes/, 
