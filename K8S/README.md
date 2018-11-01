@@ -6,3 +6,4 @@ Followed https://1byte.io/developer-guide-to-docker-and-kubernetes for quickly g
 * You need clear all the ENV vars with leading DOCKER in current shell, which was set by minikube previously
 * You could download minikube-v1.0.6.iso directly to ~/.minikube/cache/iso using ignore certificate options. For example: curl -k -O https://storage.googleapis.com/minikube/iso/minikube-v1.0.6.iso, and start minikube again
 * Finally, run "kubectl delete deploy k8s-demo-deployment" to delete the deployment and clean up the K8S env
+* You can access the logs of your pods with: **kubectl logs [podname] -p**, the -p option will read the logs of the previous (crashed) instance. If the crash comes from the application, you should have useful logs in there.
