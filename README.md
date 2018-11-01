@@ -1,7 +1,7 @@
 # Readme
 
 ## Excellent Example Collection
-* https://1byte.io/developer-guide-to-docker-and-kubernetes/, Docker 和 Kubernetes 从听过到略懂：给程序员的旋风教程
+* https://1byte.io/developer-guide-to-docker-and-kubernetes/, Docker 和 Kubernetes 从听过到略懂：给程序员的旋风教程, check out commit "Add Vagrant Kubernetes Context into the minikube/desktop configured file" for config multiple k8s contexts
 * https://geraldonit.com/2018/03/26/deploying-a-kubernetes-cluster-with-vagrant-on-virtual-box/, a.t.t. (works well in office cable network)
 * https://matthewdavis.io/angular-docker/, Angular on Docker Nginx. A minor optimization by adding --prod to "npm run build" for generating the distribution build.
 * Rails 5 JWT enabled multiple versions REST API, https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-two
