@@ -1,7 +1,8 @@
 # Readme
 
 ## Excellent Example Collection
-* https://geraldonit.com/2018/03/26/deploying-a-kubernetes-cluster-with-vagrant-on-virtual-box/, a.t.t.
+* https://1byte.io/developer-guide-to-docker-and-kubernetes/, Docker 和 Kubernetes 从听过到略懂：给程序员的旋风教程
+* https://geraldonit.com/2018/03/26/deploying-a-kubernetes-cluster-with-vagrant-on-virtual-box/, a.t.t. (works well in office cable network)
 * https://matthewdavis.io/angular-docker/, Angular on Docker Nginx. A minor optimization by adding --prod to "npm run build" for generating the distribution build.
 * Rails 5 JWT enabled multiple versions REST API, https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-two
 * SQLite Full Text search support, https://crawshaw.io/blog/one-process-programming-notes?utm_source=wanqu.co&utm_campaign=Wanqu+Daily&utm_medium=website&from=singlemessage&isappinstalled=0
