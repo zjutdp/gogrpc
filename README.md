@@ -2,14 +2,14 @@
 
 ## Excellent Example Collection
 * https://docs.helm.sh/using_helm/, install helm binary and run "helm init" to install tiller, the mysql example printed are very instuctive
-* https://1byte.io/developer-guide-to-docker-and-kubernetes/, Docker 和 Kubernetes 从听过到略懂：给程序员的旋风教程, check out commit "Add Vagrant Kubernetes Context into the minikube/desktop configured file" for config multiple k8s contexts
+* https://kubernetes.io/docs/tutorials/k8s201/, finished successfully in Office network & docker-for-desktop context
 * https://geraldonit.com/2018/03/26/deploying-a-kubernetes-cluster-with-vagrant-on-virtual-box/, a.t.t. (works well in office cable network)
+* https://1byte.io/developer-guide-to-docker-and-kubernetes/, Docker 和 Kubernetes 从听过到略懂：给程序员的旋风教程, check out commit "Add Vagrant Kubernetes Context into the minikube/desktop configured file" for config multiple k8s contexts; context switching could also be done in docker GUI or cmd
 * https://matthewdavis.io/angular-docker/, Angular on Docker Nginx. A minor optimization by adding --prod to "npm run build" for generating the distribution build
 * Rails 5 JWT enabled multiple versions REST API, https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-two
 * SQLite Full Text search support, https://crawshaw.io/blog/one-process-programming-notes?utm_source=wanqu.co&utm_campaign=Wanqu+Daily&utm_medium=website&from=singlemessage&isappinstalled=0
 * https://coursetro.com/posts/code/171/Angular-7-Tutorial---Learn-Angular-7-by-Example, Angular 7 hello world
 * https://www.thepolyglotdeveloper.com/2016/07/create-a-simple-restful-api-with-golang/, build a REST API example by Golang
-* https://kubernetes.io/docs/tutorials/k8s201/, finished successfully in Office network & docker-for-desktop context
 
 ## Tools
 * https://httpie.org, httpie, a handy and intuitive http client cmd
