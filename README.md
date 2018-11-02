@@ -8,6 +8,7 @@
 * SQLite Full Text search support, https://crawshaw.io/blog/one-process-programming-notes?utm_source=wanqu.co&utm_campaign=Wanqu+Daily&utm_medium=website&from=singlemessage&isappinstalled=0
 * https://coursetro.com/posts/code/171/Angular-7-Tutorial---Learn-Angular-7-by-Example, Angular 7 hello world
 * https://www.thepolyglotdeveloper.com/2016/07/create-a-simple-restful-api-with-golang/, build a REST API example by Golang
+* https://kubernetes.io/docs/tutorials/k8s201/, finished successfully in Office network & docker-for-desktop context
 
 ## Tools
 * https://httpie.org, httpie, a handy and intuitive http client cmd
