@@ -21,3 +21,5 @@
 
 ## Concept, Opinion, Research
 * http://www.hadooptrainingchennai.in/vagrant-training-mumbai/, Vagrant relation with Base box, Vagrant file, VM provider/privioners
+* https://stackoverflow.com/questions/47848258/kubernetes-controller-vs-kubernetes-operator
+* https://kubernetes.io/docs/concepts/overview/components/
