@@ -23,3 +23,5 @@
 * http://www.hadooptrainingchennai.in/vagrant-training-mumbai/, Vagrant relation with Base box, Vagrant file, VM provider/privioners
 * https://stackoverflow.com/questions/47848258/kubernetes-controller-vs-kubernetes-operator
 * https://kubernetes.io/docs/concepts/overview/components/
+* Kasten, "Data Management for 
+Cloud-Native Applications", Run containerized stateful applications with confidence, at enterprise scale
