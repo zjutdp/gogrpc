@@ -1,6 +1,9 @@
 # Readme
 
 ## Excellent Example Collection
+* https://www.youtube.com/watch?v=2uNRhzayHqo, Rook: Storage Orchestration for a Cloud-Native World
+* https://www.youtube.com/watch?v=dnmqoD0XP18, Elastic Stack Version 6.5: Feature Tour, the best part is the 3 use cases for cross-cluster replication
+* https://www.youtube.com/watch?v=s7IrYt1igSM, Jaeger: Distributed Tracing at Uber
 * https://docs.helm.sh/using_helm/, install helm binary and run "helm init" to install tiller, the mysql example printed are very instuctive
 * https://kubernetes.io/docs/tutorials/k8s201/, finished successfully in Office network & docker-for-desktop context
 * https://geraldonit.com/2018/03/26/deploying-a-kubernetes-cluster-with-vagrant-on-virtual-box/, a.t.t. (works well in office cable network)
