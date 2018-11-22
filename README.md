@@ -22,6 +22,10 @@
 * https://blog.alexellis.io/docker-mac-bash-completion/, Auto completion for docker
 * https://1byte.io/developer-guide-to-docker-and-kubernetes/
 
+## Nifty Commands
+* on Mac, echo $PATH | base64 | base64 --decode
+* on Linux, cat /etc/os-release
+
 ## Concept, Opinion, Research
 * http://www.hadooptrainingchennai.in/vagrant-training-mumbai/, Vagrant relation with Base box, Vagrant file, VM provider/privioners
 * https://stackoverflow.com/questions/47848258/kubernetes-controller-vs-kubernetes-operator
