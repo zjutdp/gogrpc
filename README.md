@@ -17,6 +17,7 @@
 * https://www.thepolyglotdeveloper.com/2016/07/create-a-simple-restful-api-with-golang/, build a REST API example by Golang
 
 ## Tools
+* https://tmuxcheatsheet.com/, Tmux, Swiss Army Knife like multi-pane terminal
 * https://httpie.org, httpie, a handy and intuitive http client cmd
 * ab, Apache Bench for concurrent HTTP requesting testing
 * https://reqres.in, Reqres - A hosted REST-API ready to respond to your AJAX requests
