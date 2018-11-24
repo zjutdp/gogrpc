@@ -1,6 +1,7 @@
 # Readme
 
 ## Excellent Example Collection
+* https://mp.weixin.qq.com/s/FGMkNexqKvFXmOTjqJZkfA, Meituan Cloud Containerization Practices
 * https://www.youtube.com/watch?v=2uNRhzayHqo, Rook: Storage Orchestration for a Cloud-Native World
 * https://www.youtube.com/watch?v=dnmqoD0XP18, Elastic Stack Version 6.5: Feature Tour, the best part is the 3 use cases for cross-cluster replication
 * https://www.youtube.com/watch?v=s7IrYt1igSM, Jaeger: Distributed Tracing at Uber
