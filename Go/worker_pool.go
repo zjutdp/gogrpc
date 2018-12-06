@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sync"
 	"sync/atomic"
 	"time"
 )
@@ -9,62 +10,96 @@ import (
 const jobCount = 10000000
 
 var totalConsumed uint64
+var totalProduced uint64
 
 func main() {
 
 	start := time.Now()
 
 	// Similar to bufio, buffered channel speed up
-	// communication between goroutings
+	// communication between goroutings by buffering
 	jobs := make(chan int, 1000)
 	results := make(chan int, 1000)
-	done := make(chan bool)
+
+	wgWorker := new(sync.WaitGroup)
+	wgConsumer := new(sync.WaitGroup)
+
+	done := make(chan bool, 1) // Has to be 1, otherwise deadlock
 
 	workerCount := 30
 	consumerCount := 50
 
 	for i := 0; i < workerCount; i++ {
-		go worker(i, jobs, results)
+		wgWorker.Add(1)
+		go worker(i, jobs, results, wgWorker)
 	}
 	fmt.Println("Started ", workerCount, " workers")
 
 	for i := 0; i < consumerCount; i++ {
-		go consumer(i, results, done)
+		wgConsumer.Add(1)
+		go consumer(i, results, done, wgConsumer)
 	}
-	fmt.Println("Started ", consumerCount, " consumer")
+	fmt.Println("Started ", consumerCount, " consumers")
 
 	for i := 0; i < jobCount; i++ {
 		jobs <- i
 	}
 	fmt.Printf("Generated %d jobs\n", jobCount)
 
-	<-done
-	fmt.Println("All jobs done and all results consumed in ",
-		time.Now().Sub(start))
-}
+	close(jobs)
+	fmt.Println("Close jobs channel as jobs done")
 
-func worker(id int, jobs <-chan int, results chan<- int) {
-	for j := range jobs {
-		//fmt.Println("Worker: ", id, " processing job: ", j)
+	wgWorker.Wait()
+	fmt.Printf("All workers have finished with total: %d produced!\n",
+		atomic.LoadUint64(&totalProduced))
 
-		//time.Sleep(100 * time.Millisecond)
+	close(results)
+	fmt.Println("Close results channel as workers done, no more write")
 
-		results <- j * 10
+	wgConsumer.Wait()
+	fmt.Printf("All consumers have finished with total: %d consumed!\n",
+		atomic.LoadUint64(&totalConsumed))
+
+	<-done // Same effect as above all consumers have finished waiting
+
+	// Only OK when "done" is closed by the sender, otherwise deadlock
+	// Adding below for closing this channel
+	if _, ok := <-done; !ok {
+		fmt.Println("All jobs done and all results consumed in ",
+			time.Now().Sub(start))
+	}
+
+	// Double check
+	if len(done) == 0 {
+		fmt.Println("Double checked that all jobs done and all results consumed!")
 	}
 }
 
-func consumer(id int, results <-chan int, done chan<- bool) {
+func worker(id int, jobs <-chan int, results chan<- int, wg *sync.WaitGroup) {
+	for j := range jobs {
+		//fmt.Println("Worker: ", id, " processing job: ", j)
+		//time.Sleep(100 * time.Millisecond)
+		atomic.AddUint64(&totalProduced, 1)
+		results <- j * 10
+	}
+
+	wg.Done()
+}
+
+func consumer(id int, results <-chan int, done chan<- bool, wg *sync.WaitGroup) {
 	for r := range results {
 		//fmt.Println("Consumer: ", id, " consuming result: ", r)
 		r++
 		//time.Sleep(100 * time.Millisecond)
-
 		atomic.AddUint64(&totalConsumed, 1)
 		if atomic.LoadUint64(&totalConsumed) == jobCount {
 			done <- true
+			close(done)
 		}
 	}
-	// Same functionality as above code fragment but more complex
+
+	wg.Done()
+	// Same functionality as above "range" code fragment but more complex
 	// for {
 	// 	r, ok := <-results
 	// 	if !ok {

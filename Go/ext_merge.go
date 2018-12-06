@@ -6,8 +6,10 @@ import (
 	"fmt"
 	"io"
 	"math/rand"
+	"net"
 	"os"
 	"sort"
+	"strconv"
 	"time"
 )
 
@@ -20,7 +22,9 @@ func init() {
 // 将排好序的内存数据打印输出，或者存文件
 func main() {
 	//generateFile("large.in", 100000000)
-	largeMergeDemo()
+	//largeMergeDemo()
+
+	networkLargeMergeDemo()
 }
 
 func inMemDemo() {
@@ -41,14 +45,21 @@ func inMemMergeDemo() {
 }
 
 func smallMergeDemo() {
-	p := CreatePipeline("small.in", 512, 4)
+	p := CreatePipeline("small.in", 4)
 
 	writeToFile(p, "small.out")
 	printFile("small.out")
 }
 
 func largeMergeDemo() {
-	p := CreatePipeline("large.in", 800000000, 4)
+	p := CreatePipeline("large.in", 16)
+
+	writeToFile(p, "large.out")
+	printFile("large.out")
+}
+
+func networkLargeMergeDemo() {
+	p := createNetworkPipeline("large.in", 16)
 
 	writeToFile(p, "large.out")
 	printFile("large.out")
@@ -62,6 +73,21 @@ func generateFile(filename string, n int) {
 	defer file.Close()
 	p := RandomSource(n)
 	WriterSink(file, p)
+}
+
+func fileSize(filename string) int64 {
+	file, err := os.Open(filename)
+	defer file.Close()
+
+	if err != nil {
+		panic(err)
+	}
+	st, err := file.Stat()
+	if err != nil {
+		panic(err)
+	}
+
+	return st.Size()
 }
 
 func writeToFile(p <-chan int, filename string) {
@@ -235,8 +261,9 @@ func RandomSource(count int) <-chan int {
 
 func CreatePipeline(
 	filename string,
-	fileSize, chunkCount int) <-chan int {
+	chunkCount int) <-chan int {
 
+	fileSize := int(fileSize(filename))
 	chunkSize := fileSize / chunkCount
 
 	sortResults := []<-chan int{}
@@ -252,5 +279,81 @@ func CreatePipeline(
 
 		sortResults = append(sortResults, InMemSort(source))
 	}
+	return MergeN(sortResults...)
+}
+
+func NetworkSink(addr string, in <-chan int) {
+	listener, err := net.Listen("tcp", addr)
+	if err != nil {
+		panic(err)
+	}
+
+	go func() {
+		defer listener.Close()
+
+		conn, err := listener.Accept()
+		if err != nil {
+			panic(err)
+		}
+		defer conn.Close()
+
+		writer := bufio.NewWriter(conn)
+		defer writer.Flush()
+
+		WriterSink(writer, in)
+	}()
+}
+
+func NetworkSource(addr string) <-chan int {
+	out := make(chan int)
+	go func() {
+		conn, err := net.Dial("tcp", addr)
+		if err != nil {
+			panic(err)
+		}
+
+		defer conn.Close()
+
+		r := ReaderSource(conn, -1)
+		for v := range r {
+			out <- v
+		}
+
+		close(out)
+	}()
+
+	return out
+}
+
+func createNetworkPipeline(
+	filename string,
+	chunkCount int) <-chan int {
+
+	fileSize := int(fileSize(filename))
+	chunkSize := fileSize / chunkCount
+
+	sortAddr := []string{}
+	for i := 0; i < chunkCount; i++ {
+		file, err := os.Open(filename)
+		if err != nil {
+			panic(err)
+		}
+
+		file.Seek(int64(i*chunkSize), 0)
+
+		source := ReaderSource(file, chunkSize)
+
+		addr := ":" + strconv.Itoa(7000+i)
+		NetworkSink(addr, InMemSort(source))
+		sortAddr = append(sortAddr, addr)
+	}
+
+	// Sleep here for testing the network sinks accepting only 1 conn
+	// time.Sleep(time.Hour)
+	sortResults := []<-chan int{}
+	for _, addr := range sortAddr {
+		sortResults = append(sortResults, NetworkSource(addr))
+	}
+
 	return MergeN(sortResults...)
 }
